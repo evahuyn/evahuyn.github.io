@@ -2,3 +2,13 @@
   padding: 0;
   margin: 0;
 }
+
+.firstSection {
+  height: 40vh;
+  background-color: #e3dbd8;
+}
+
+.secondSection {
+  height: 40vh;
+  background-color: #a6a29e;
+}

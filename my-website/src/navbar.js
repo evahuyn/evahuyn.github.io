@@ -1,29 +1,39 @@
-import React from 'react';
+import React from 'react'
+import './navbar.css'
+class Navbar extends React.Component {
+  listener = null;
+  state = {
+    nav:false
+  }
+  componentDidMount() {
+     window.addEventListener("scroll", this.handleScroll);
+   }
+   componentWillUnmount() {
+      window.removeEventListener('scroll');
+    }
+   handleScroll= () => {
+     if (window.pageYOffset > 70) {
+         if(!this.state.nav){
+           this.setState({ nav: true });
+         }
+     }else{
+         if(this.state.nav){
+           this.setState({ nav: false });
+         }
+     }
 
-const itemStyle = {
- marginInline:"4vw",
- fontSize: "1.5vw",
-}
+   }
 
-const preStyle = {
- display: "flex",
- backgroundColor: "antiquewhite",
- alignItems: "center",
- justifyContent: "center",
- height: "10vh"
-}
-
-const Navbar = ()=>{
+  render(){
   return (
-    <div className='navbar'
-         style = {preStyle}
-    >
-      <p style={itemStyle}>Home</p>
-      <p style={itemStyle}>Projects</p>
-      <p style={itemStyle}>Photography</p>
-      <p style={itemStyle}>About me</p>
+    <div>
+    <div className={`Nav ${this.state.nav && 'Nav__black'}`}>
+    <p>Home</p>
+    <p>Projects</p>
+    <p>Photography</p>
+    <p>About me</p>
     </div>
-  )
+    </div>
+  );}
 }
-
-export default Navbar;
+export default Navbar
