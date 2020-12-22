@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const Title = () =>{
-  return (
-    <h1>Advanced React</h1>
-  );
-}
+import './index.css'
+import App from './App';
 
 ReactDOM.render(
-  <Title />,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
-
