@@ -7,6 +7,14 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.navItemV2 {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  margin-inline: 4vw;
+  font-family: 'Raleway', sans-serif;
+}
+
 .navItem:hover {
-  color: white;
+  color: rgb(216, 216, 216);
 }

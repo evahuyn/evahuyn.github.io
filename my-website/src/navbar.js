@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, Component} from 'react'
 import $ from 'jquery'
 import {Link} from 'react-router-dom';
 import './Navbar.css'
 
-const navStyle = {
+let navStyle = {
   display: "flex",
   alignItems: 'center',
   justifyContent: 'center',
@@ -11,35 +11,56 @@ const navStyle = {
   width: "100%",
   transition: "500ms ease",
 }
-const preStyle = {
+let preStyle = {
   height: "12vh",
   backgroundColor: "transparent",
   borderBottom: "1px solid white",
 }
 
-const postStyle = {
+let postStyle = {
   backgroundColor: "rgb(255,255,255,0.8)",
   height: "10vh",
 }
 
-const Navbar = () =>{
+function scrollEffect(){
   $(window).on('scroll', function(){
   let scroll = $(window).scrollTop();
-  console.log(scroll)
     if(scroll < 70){
       $('.navbar').css(preStyle)
     } else{
       $('.navbar').css(postStyle)
     }
   });
+}
 
-  return (
-    <nav className="navbar" style={Object.assign({}, preStyle, navStyle)}>
-      <Link to="/" className="navItem">Home</Link>
-      <Link to="/" className="navItem">Projects</Link>
-      <Link to="/" className="navItem">Photography</Link>
-      <Link to="/about" className="navItem">About</Link>
-    </nav>
-  )
+let navItemClass;
+
+class Navbar extends Component{
+
+  constructor(props) {
+    super(props);
+    this.state = { preBorder: "1px solid white", postColor: "rgb(255,255,255,0.8)"};
+  }
+
+  changeStyle = (preBorder, postColor) => {
+    this.setState({ preBorder, postColor });
+  };
+
+  render(){
+    preStyle.borderBottom= this.state.preBorder;
+    postStyle.backgroundColor = this.state.postColor;
+    navItemClass = this.state.navItemClass;
+    scrollEffect()
+    return (
+      <nav className="navbar" style={Object.assign({}, preStyle, navStyle)}>
+        <Link to="/" className="navItem" 
+        onClick={()=>this.changeStyle("1px solid white","rgb(255,255,255,0.8)")}>Home</Link>
+        <Link to="/" className="navItem">Projects</Link>
+        <Link to="/" className="navItem">Photography</Link>
+        <Link to="/about" className="navItem" 
+        onClick={()=>this.changeStyle("1px solid black","black")}>About</Link>
+      </nav>
+    )
+  }
 }
 export default Navbar

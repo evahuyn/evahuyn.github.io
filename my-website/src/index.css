@@ -12,3 +12,8 @@
   height: 40vh;
   background-color: #a6a29e;
 }
+
+.container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
