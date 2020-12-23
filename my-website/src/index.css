@@ -4,7 +4,6 @@
 }
 
 .firstSection {
-  height: 40vh;
   background-color: #e3dbd8;
 }
 
@@ -13,7 +12,23 @@
   background-color: #a6a29e;
 }
 
+.thirdSection {
+  height: 40vh;
+  background-color: #583629;
+}
+
 .container {
   padding-left: 5vw;
   padding-right: 5vw;
+}
+
+.middle-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway&display=swap');
+.fontBody {
+  font-family: 'Nunito Sans', sans-serif;
 }

@@ -55,8 +55,8 @@ class Navbar extends Component{
       <nav className="navbar" style={Object.assign({}, preStyle, navStyle)}>
         <Link to="/" className="navItem" 
         onClick={()=>this.changeStyle("1px solid white","rgb(255,255,255,0.8)")}>Home</Link>
-        <Link to="/" className="navItem">Projects</Link>
-        <Link to="/" className="navItem">Photography</Link>
+        <Link to="/project" className="navItem">Projects</Link>
+        <Link to="/photography" className="navItem">Photography</Link>
         <Link to="/about" className="navItem" 
         onClick={()=>this.changeStyle("1px solid black","black")}>About</Link>
       </nav>
