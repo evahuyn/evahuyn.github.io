@@ -1,6 +1,12 @@
-.item {
-  margin-inline: '4vw';
-  font-size: '1.2rem';
-  text-decoration: 'none';
-  color: 'black';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.navItem {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  margin-inline: 4vw;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navItem:hover {
+  color: white;
 }

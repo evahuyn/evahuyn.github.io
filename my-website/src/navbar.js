@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import $ from 'jquery'
 import {Link} from 'react-router-dom';
-import "./navbar.css"
+import './Navbar.css'
 
 const navStyle = {
   display: "flex",
@@ -22,26 +22,6 @@ const postStyle = {
   height: "10vh",
 }
 
-// const useHover = () => {
-//   const [ hover, setHover ] = useState(false);
-
-//   const onMouseEnter = () => {
-//     setHover(true);
-//   };
-
-//   const onMouseLeave = () => {
-//     setHover(false);
-//   };
-
-//   let hoverStyle = !hover ? {
-//       color: "black", transition: 'all .2s ease-in-out',
-//     } : {
-//       color: "white", transition: 'all .2s ease-in-out',
-//     };
-
-//     return { hoverStyle, onMouseEnter, onMouseLeave };
-// };
-
 const Navbar = () =>{
   $(window).on('scroll', function(){
   let scroll = $(window).scrollTop();
@@ -53,14 +33,12 @@ const Navbar = () =>{
     }
   });
 
-  // const { hoverStyle, ...hoverProps } = useHover();
-
   return (
-    <nav className="navbar" style={Object.assign(preStyle, navStyle)}>
-      <Link to="/" className="item">Home</Link>
-      <Link to="/" className="item">Projects</Link>
-      <Link to="/" className="item">Photography</Link>
-      <Link to="/about" className="item">About</Link>
+    <nav className="navbar" style={Object.assign({}, preStyle, navStyle)}>
+      <Link to="/" className="navItem">Home</Link>
+      <Link to="/" className="navItem">Projects</Link>
+      <Link to="/" className="navItem">Photography</Link>
+      <Link to="/about" className="navItem">About</Link>
     </nav>
   )
 }
