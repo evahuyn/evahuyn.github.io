@@ -3,19 +3,6 @@
   margin: 0;
 }
 
-.firstSection {
-  background-color: #e3dbd8;
-}
-
-.secondSection {
-  background-color: #a6a29e;
-}
-
-.thirdSection {
-  height: 40vh;
-  background-color: #583629;
-}
-
 .container {
   padding-left: 5vw;
   padding-right: 5vw;
