@@ -30,6 +30,12 @@ const Section1 = () =>{
                 Studying both Computer Science and Sociology, I hope to find an intersection between the two areas. While developing sociological perspective to view and analyze real-world social phenomena, I wish to utilize technology to help resolve some current social conflicts or to help those in needs. Technology should be more than merely chasing for higher quality and higher efficiency, the concerning of humanity aspects should be reminded and emphasized. 
             </p>
         </div>
+
+        <div className="fontBody" style={{paddingLeft: '15vw', paddingRight:'15vw', marginBottom:'5vh'}}>
+            <p style={{fontSize: "1.2vw"}}><strong>Email: </strong>huyinuo@live.unc.edu
+            </p>
+            <p style={{fontSize: "1.2vw"}}><strong>Wechat: </strong>Eva_HUyn</p>
+        </div>
      </div>
 
  );

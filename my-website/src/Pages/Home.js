@@ -1,4 +1,10 @@
 import React from 'react';
+import image1 from '../photos/1.jpg'
+import image2 from '../photos/2.jpg'
+import image3 from '../photos/3.jpg'
+import image4 from '../photos/4.jpg'
+import image5 from '../photos/5.jpg'
+import image6 from '../photos/6.jpg'
 
 function Home(){
  return(
@@ -28,21 +34,21 @@ const SecondSection = () =>{
   <div className='container' style={{backgroundColor: 'rgb(255,255,255,0.6)', width:"80vw", marginBottom:"3vh", textAlign: "center"}}>
       <div className="row">
           <div className="col image1">
-                <img src="homepagePics/focus1.jpg" height="100%" width="100%" alt="focus1" className="image"/>
+                <img src={image1} height="100%" width="100%" alt="focus1" className="image"/>
                       <div className="overlay1">
                           <div className="text">Miao Miao Social Networking Platform</div>
                       </div>
           </div>
 
           <div className="col image2">
-              <img src="homepagePics/focus2.jpg" height="100%" width="100%" alt="focus2" className="image"/>
+              <img src={image2} height="100%" width="100%" alt="focus2" className="image"/>
                       <div className="overlay2">
                           <div className="text">Making Science Visible Project Website</div>
                       </div>
           </div>
 
           <div className="col image3">
-              <img src="homepagePics/focus3.jpg" height="100%" width="100%" alt="focus3" className="image"/>
+              <img src={image3} height="100%" width="100%" alt="focus3" className="image"/>
               <div className="overlay3">
                   <div className="text">Covid19 Toolkit</div>
               </div>
@@ -51,7 +57,7 @@ const SecondSection = () =>{
 
       <div className="row">
           <div className="col image4">
-              <img src="homepagePics/focus4.jpg" height="100%" width="100%" alt="focus4" className="image"/>
+              <img src={image4} height="100%" width="100%" alt="focus4" className="image"/>
               <div className="overlay4">
                   <div className="text">System of Managing Food Expiration in Refrigerators</div>
               </div>
@@ -59,14 +65,14 @@ const SecondSection = () =>{
           </div>
 
           <div className="col image5">
-              <img src="homepagePics/focus5.jpg" height="100%" width="100%" alt="focus5" className="image"/>
+              <img src={image5} height="100%" width="100%" alt="focus5" className="image"/>
               <div className="overlay5">
                   <div className="text">Platform for Activity Information Integration</div>
               </div>
           </div>
 
           <div className="col image6">
-              <img src="homepagePics/focus6.jpg" height="100%" width="100%" alt="focus6" className="image"/>
+              <img src={image6} height="100%" width="100%" alt="focus6" className="image"/>
               <div className="overlay6">
                   <div className="text">How can automated feedback promote students' productive discourse?</div>
               </div>

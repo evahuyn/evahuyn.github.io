@@ -42,6 +42,7 @@
   display: block;
   width: 100%;
   height: auto;
+  margin-left: 1vw;
 }
 
 .text {
@@ -54,6 +55,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  margin-left: 1vw;
 }
 
 /*focus1*/
@@ -65,9 +67,8 @@
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(48,121,171,0.8);
-  margin-right: 15px;
-  margin-left: 15px;
+  background-color: rgba(88,54,41,0.8);
+  margin-left: 1vw;
 }
 
 .col.image1:hover .overlay1 {
@@ -83,9 +84,8 @@
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(48,121,171,0.8);
-  margin-right: 15px;
-  margin-left: 15px;
+  background-color: rgba(88,54,41,0.8);
+  margin-left: 1vw;
 }
 
 .col.image2:hover .overlay2 {
@@ -101,9 +101,8 @@
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(48,121,171,0.8);
-  margin-right: 15px;
-  margin-left: 15px;
+  background-color:rgba(88,54,41,0.8);
+  margin-left: 1vw;
 }
 
 .col.image3:hover .overlay3 {
@@ -119,9 +118,8 @@
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(48,121,171,0.8);
-  margin-right: 15px;
-  margin-left: 15px;
+  background-color:rgba(88,54,41,0.8);
+  margin-left: 1vw;
 }
 
 .col.image4:hover .overlay4 {
@@ -137,9 +135,8 @@
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(48,121,171,0.8);
-  margin-right: 15px;
-  margin-left: 15px;
+  background-color: rgba(88,54,41,0.8);
+  margin-left: 1vw;
 }
 
 .col.image5:hover .overlay5 {
@@ -155,9 +152,9 @@
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(48,121,171,0.8);
-  margin-right: 15px;
-  margin-left: 15px;
+  background-color: rgba(88,54,41,0.8);
+  margin-left: 1vw;
+
 }
 
 .col.image6:hover .overlay6 {
