@@ -5,7 +5,7 @@ function Home(){
   <>
    <FirstSection />
    <SecondSection />
-   <ThirdSection />
+   {/* <ThirdSection /> */}
   </>
 
  )
@@ -13,7 +13,7 @@ function Home(){
 
 const FirstSection = () =>{
  return (
-  <div className='fontBody container' style={{paddingTop: "15vh", paddingBottom: "3vh", backgroundColor: "#EFE1D4"}}>
+  <div className='fontBody container' style={{paddingTop: "15vh", paddingBottom: "3vh", backgroundColor: "#e3dbd8"}}>
     <h2>胡一诺 Yinuo "Eva" Hu</h2>
     <h4>Computer Science B.S. & Sociology | University of North Carolina at Chapel Hill</h4>
     <h4>计算机 & 社会学 | 美国北卡大学教堂山分校</h4>
@@ -23,46 +23,58 @@ const FirstSection = () =>{
 
 const SecondSection = () =>{
  return (
-  <div className='fontBody middle-center' style={{backgroundColor: "#a6a29e"}}>
-    <h2 style={{marginBottom: '3vh', marginTop:'3vh'}}>My Projects</h2>
+  <div div className='fontBody middle-center' style={{backgroundColor: "#a6a29e"}}>
+        <h2 style={{marginBottom: '3vh', marginTop:'3vh'}}>My Projects and Research</h2>
+  <div className='container' style={{backgroundColor: 'rgb(255,255,255,0.6)', width:"80vw", marginBottom:"3vh", textAlign: "center"}}>
+      <div className="row">
+          <div className="col image1">
+                <img src="homepagePics/focus1.jpg" height="100%" width="100%" alt="focus1" className="image"/>
+                      <div className="overlay1">
+                          <div className="text">Miao Miao Social Networking Platform</div>
+                      </div>
+          </div>
 
-    <div className='container' style={{backgroundColor: 'rgb(255,255,255,0.6)', width:"80vw", marginBottom:"5vh"}}>
-      
-      <h3>Miao Miao Social Networking Platform</h3>
-      <p>A Revolutionary Social App</p>
-      <p><strong>Intention: </strong>Unlike other social apps where friends are recommended to you based on your friends list, Miao Miao contains a personality test and will recommend people based on the test result.</p>
-      <p><strong>Built with: </strong>JavaScript, HTML & CSS, Firebase backend, Bad_words API, Open Trivia DB</p>
-      <a href='https://miaomiao-chat.herokuapp.com/' target='_blank'>Explore More</a>
-    </div>
+          <div className="col image2">
+              <img src="homepagePics/focus2.jpg" height="100%" width="100%" alt="focus2" className="image"/>
+                      <div className="overlay2">
+                          <div className="text">Making Science Visible Project Website</div>
+                      </div>
+          </div>
 
-    <div className='container' style={{backgroundColor: 'rgb(255,255,255,0.6)', width:"80vw", marginBottom:"5vh"}}>
-      <h3>Making Science Visible Project Website</h3>
-      <p><strong>Intention: </strong>Built for Making Science Visible team to display research findings and visualilzations</p>
-      <p><strong>Built with: </strong>JavaScript, HTML & CSS</p>
-      <a href='http://ryoo-dept-soe.cloudapps.unc.edu/nsf/' target='_blank'>Explore More</a>
-    </div>
+          <div className="col image3">
+              <img src="homepagePics/focus3.jpg" height="100%" width="100%" alt="focus3" className="image"/>
+              <div className="overlay3">
+                  <div className="text">Covid19 Toolkit</div>
+              </div>
+          </div>          
+      </div>
 
-    <div className='container' style={{backgroundColor: 'rgb(255,255,255,0.6)', width:"80vw", marginBottom:"5vh"}}>
-      <h3>Covid19 Toolkit</h3>
-      <p><strong>Intention: </strong>The United States has the highest number of Covid-19 cases around the world. It’s been almost half a year since the huge outbreak in the United States but we still see the curve of cases not slowing down. It is critical to educate the public about the basic facts and approaches of prevention to stop further spread of the disease. So we created a Covid-19 Toolkit to help people of all ages learn basic statistics, symptoms, and prevention of Covid-19.</p>
-      <p><strong>Built with: </strong>ES6 functions, Jquery, HTML & CSS, Arduino</p>
-      <a href='https://devpost.com/software/how-to-get-away-from-covid-19' target='_blank'>Explore More</a>
-    </div>
- 
-    <div className='container' style={{backgroundColor: 'rgb(255,255,255,0.6)', width:"80vw", marginBottom:"5vh"}}>
-      <h3>System of Managing Food Expiration in Refrigerators</h3>
-      <p><strong>Intention: </strong>We all have encountered the problem when we opened our fridge and found something went expired by surprise. With all the fruit, vegetable, dairy products we keep in the fridge and busy school works, it is hard and tiring to keep track of all the expiration dates manually. A lot of food ends up in the dumpster in this way. This not only leads to financial waste for students but also causes a huge waste of food. In order to prevent this major waste, We developed our Frigi-track, to remind people of the freshness of their food.</p>
-      <p><strong>Built with: </strong>JavaScript, HTML & CSS, Quagga API</p> 
-      <a href='http://ryoo-dept-soe.cloudapps.unc.edu/nsf/' target='_blank'>Explore More</a>
-    </div>
+      <div className="row">
+          <div className="col image4">
+              <img src="homepagePics/focus4.jpg" height="100%" width="100%" alt="focus4" className="image"/>
+              <div className="overlay4">
+                  <div className="text">System of Managing Food Expiration in Refrigerators</div>
+              </div>
+              
+          </div>
 
-    <div className='container' style={{backgroundColor: 'rgb(255,255,255,0.6)', width:"80vw", marginBottom:"5vh"}}>
-      <h3>Platform for Activity Information Integration </h3>
-      <p><strong>Intention: </strong>The project aimed to build an activity information integration platform, including personalized activity recommendations for users</p>
-      <p><strong>Built with: </strong>JavaScript, HTML & CSS, Django</p>
-      <a href='https://github.com/Elnifio/TutorHub' target='_blank'>View Source Code</a>
-    </div>
+          <div className="col image5">
+              <img src="homepagePics/focus5.jpg" height="100%" width="100%" alt="focus5" className="image"/>
+              <div className="overlay5">
+                  <div className="text">Platform for Activity Information Integration</div>
+              </div>
+          </div>
+
+          <div className="col image6">
+              <img src="homepagePics/focus6.jpg" height="100%" width="100%" alt="focus6" className="image"/>
+              <div className="overlay6">
+                  <div className="text">How can automated feedback promote students' productive discourse?</div>
+              </div>
+          </div>          
+      </div>
   </div>
+
+</div>
  )
 }
 
