@@ -1,7 +1,7 @@
 import React, {useState, Component} from 'react'
 import $ from 'jquery'
 import {Link} from 'react-router-dom';
-import './Navbar.css'
+import './navbar.css'
 
 let navStyle = {
   display: "flex",
@@ -25,7 +25,7 @@ let postStyle = {
 function scrollEffect(){
   $(window).on('scroll', function(){
   let scroll = $(window).scrollTop();
-    if(scroll < 70){
+    if(scroll < 40){
       $('.navbar').css(preStyle)
     } else{
       $('.navbar').css(postStyle)
