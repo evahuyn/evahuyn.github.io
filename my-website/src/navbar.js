@@ -10,6 +10,7 @@ let navStyle = {
   position: "fixed",
   width: "100%",
   transition: "500ms ease",
+  zIndex: "100"
 }
 let preStyle = {
   height: "12vh",

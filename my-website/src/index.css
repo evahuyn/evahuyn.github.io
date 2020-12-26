@@ -161,6 +161,18 @@
   opacity: 1;
 }
 
+.button{
+  display: block;
+    text-decoration: none;
+    color: white;
+    background-color: cadetblue;
+    width: 15vw;
+    padding: 1vw;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1vh;
+    margin: 0.5vh;
+}
 
 
 

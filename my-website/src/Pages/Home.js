@@ -33,50 +33,62 @@ const SecondSection = () =>{
         <h2 style={{marginBottom: '3vh', marginTop:'3vh'}}>My Projects and Research</h2>
   <div className='container' style={{backgroundColor: 'rgb(255,255,255,0.6)', width:"80vw", marginBottom:"3vh", textAlign: "center"}}>
       <div className="row">
-          <div className="col image1">
-                <img src={image1} height="100%" width="100%" alt="focus1" className="image"/>
-                      <div className="overlay1">
-                          <div className="text">Miao Miao Social Networking Platform</div>
-                      </div>
-          </div>
+          <a href='https://miaomiao-chat.herokuapp.com/' target='_blank'>
+            <div className="col image1">
+                    <img src={image1} height="100%" width="100%" alt="focus1" className="image"/>
+                        <div className="overlay1">
+                            <div className="text">Miao Miao Social Networking Platform</div>
+                        </div>
+            </div>
+          </a>
 
-          <div className="col image2">
-              <img src={image2} height="100%" width="100%" alt="focus2" className="image"/>
-                      <div className="overlay2">
-                          <div className="text">Making Science Visible Project Website</div>
-                      </div>
-          </div>
+         <a href='http://ryoo-dept-soe.cloudapps.unc.edu/nsf/' target='_blank'>
+            <div className="col image2">
+                <img src={image2} height="100%" width="100%" alt="focus2" className="image"/>
+                        <div className="overlay2">
+                            <div className="text">Making Science Visible Project Website</div>
+                        </div>
+            </div>
+         </a>
 
-          <div className="col image3">
-              <img src={image3} height="100%" width="100%" alt="focus3" className="image"/>
-              <div className="overlay3">
-                  <div className="text">Covid19 Toolkit</div>
-              </div>
-          </div>          
-      </div>
+        <a href='https://devpost.com/software/how-to-get-away-from-covid-19' target='_blank'>
+            <div className="col image3">
+                <img src={image3} height="100%" width="100%" alt="focus3" className="image"/>
+                <div className="overlay3">
+                    <div className="text">Covid19 Toolkit</div>
+                </div>
+            </div>        
+        </a>
+        </div>
 
       <div className="row">
-          <div className="col image4">
-              <img src={image4} height="100%" width="100%" alt="focus4" className="image"/>
-              <div className="overlay4">
-                  <div className="text">System of Managing Food Expiration in Refrigerators</div>
-              </div>
-              
-          </div>
+        <a href='https://devpost.com/software/fridge-track' target='_blank'>
+            <div className="col image4">
+                <img src={image4} height="100%" width="100%" alt="focus4" className="image"/>
+                <div className="overlay4">
+                    <div className="text">System of Managing Food Expiration in Refrigerators</div>
+                </div>
+            </div>
+        </a>
 
+        <a href='https://github.com/Elnifio/TutorHub' target='_blank'>
           <div className="col image5">
               <img src={image5} height="100%" width="100%" alt="focus5" className="image"/>
               <div className="overlay5">
                   <div className="text">Platform for Activity Information Integration</div>
               </div>
           </div>
+        </a>
 
+        <a href='https://drive.google.com/file/d/1sfebirWy98ep-quyOvz11XW_dWKNOWte/view?usp=sharing' target='_blank'>
           <div className="col image6">
               <img src={image6} height="100%" width="100%" alt="focus6" className="image"/>
               <div className="overlay6">
                   <div className="text">How can automated feedback promote students' productive discourse?</div>
               </div>
-          </div>          
+          </div>  
+        </a>
+        
       </div>
   </div>
 
